@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.Dominio", "Soft.CalculoJuros.Dominio\Soft.CalculoJuros.Dominio.csproj", "{CF620F2C-F426-45DA-A3E7-7DAE1F0F5116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculoJuros.Dominio", "Soft.CalculoJuros.Dominio\Soft.CalculoJuros.Dominio.csproj", "{CF620F2C-F426-45DA-A3E7-7DAE1F0F5116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.Tests", "Soft.CalculoJuros.Tests\Soft.CalculoJuros.Tests.csproj", "{C8F50330-A4D0-4F6E-B7C8-4A5DF3BAC7BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculoJuros.Tests", "Soft.CalculoJuros.Tests\Soft.CalculoJuros.Tests.csproj", "{C8F50330-A4D0-4F6E-B7C8-4A5DF3BAC7BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.Infra", "Soft.CalculoJuros.Infra\Soft.CalculoJuros.Infra.csproj", "{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.Aplicacao", "Soft.CalculoJuros.Aplicacao\Soft.CalculoJuros.Aplicacao.csproj", "{6E488E2A-3DF1-4FBE-A960-D56615813C48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C8F50330-A4D0-4F6E-B7C8-4A5DF3BAC7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8F50330-A4D0-4F6E-B7C8-4A5DF3BAC7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8F50330-A4D0-4F6E-B7C8-4A5DF3BAC7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

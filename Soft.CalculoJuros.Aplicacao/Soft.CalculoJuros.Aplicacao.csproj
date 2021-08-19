@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Soft.CalculoJuros.Dominio\Soft.CalculoJuros.Dominio.csproj" />
+    <ProjectReference Include="..\Soft.CalculoJuros.Infra\Soft.CalculoJuros.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
