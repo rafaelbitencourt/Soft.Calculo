@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculoJuros.Dominio",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculoJuros.Tests", "Soft.CalculoJuros.Tests\Soft.CalculoJuros.Tests.csproj", "{C8F50330-A4D0-4F6E-B7C8-4A5DF3BAC7BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.Infra", "Soft.CalculoJuros.Infra\Soft.CalculoJuros.Infra.csproj", "{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculoJuros.Infra", "Soft.CalculoJuros.Infra\Soft.CalculoJuros.Infra.csproj", "{D04888E7-9DD8-4D5D-8943-C5F15ECD3E9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.Aplicacao", "Soft.CalculoJuros.Aplicacao\Soft.CalculoJuros.Aplicacao.csproj", "{6E488E2A-3DF1-4FBE-A960-D56615813C48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculoJuros.Aplicacao", "Soft.CalculoJuros.Aplicacao\Soft.CalculoJuros.Aplicacao.csproj", "{6E488E2A-3DF1-4FBE-A960-D56615813C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculoJuros.API", "Soft.CalculoJuros.API\Soft.CalculoJuros.API.csproj", "{B296DCD4-082D-4167-B531-257DF06BD7A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E488E2A-3DF1-4FBE-A960-D56615813C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B296DCD4-082D-4167-B531-257DF06BD7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B296DCD4-082D-4167-B531-257DF06BD7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B296DCD4-082D-4167-B531-257DF06BD7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B296DCD4-082D-4167-B531-257DF06BD7A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
