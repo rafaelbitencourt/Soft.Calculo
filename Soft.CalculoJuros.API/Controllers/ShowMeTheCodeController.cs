@@ -7,7 +7,7 @@ namespace Soft.CalculoJuros.API.Controllers
     public class ShowMeTheCodeController : ControllerBase
     {
         [HttpGet]
-        public string Get() =>
-            "https://github.com/rafaelbitencourt/Soft.CalculoJuros";
+        public ContentResult Get() =>
+            Content("https://github.com/rafaelbitencourt/Soft.CalculoJuros");
     }
 }

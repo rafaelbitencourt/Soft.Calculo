@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Soft.CalculoJuros.Aplicacao;
 using Soft.CalculoJuros.Dominio;
 using Soft.CalculoJuros.Infra;
+using System;
 
 namespace Soft.CalculoJuros.API
 {
@@ -22,7 +23,10 @@ namespace Soft.CalculoJuros.API
         {
             services.AddScoped<ICalculoService, CalculoService>();
             services.AddScoped<IAplicCalculo, AplicCalculo>();
-            services.AddScoped<ITaxasHelper, TaxasHelper>();
+            services.AddHttpClient<ITaxasService, TaxasService>(client =>
+            {
+                client.BaseAddress = new Uri(Configuration["UrlApiTaxas"]);
+            });
 
             services.AddControllers();
 
@@ -44,8 +48,6 @@ namespace Soft.CalculoJuros.API
             });
 
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

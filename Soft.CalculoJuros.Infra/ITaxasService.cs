@@ -1,6 +1,6 @@
 ﻿namespace Soft.CalculoJuros.Infra
 {
-    public interface ITaxasHelper
+    public interface ITaxasService
     {
         decimal RecuperarTaxaDeJuros();
     }
