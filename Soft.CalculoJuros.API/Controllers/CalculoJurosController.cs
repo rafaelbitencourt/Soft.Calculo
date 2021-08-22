@@ -15,9 +15,7 @@ namespace Soft.CalculoJuros.API.Controllers
         }
 
         [HttpGet]
-        public string CalcularJuros([FromQuery] decimal valorinicial, [FromQuery] int meses)
-        {
-            return _aplicCalculo.CalcularJuros(valorinicial, meses).ToString("0.00");
-        }
+        public IActionResult CalcularJuros([FromQuery] decimal valorinicial, [FromQuery] int meses) =>
+            Ok(_aplicCalculo.CalcularJuros(valorinicial, meses));
     }
 }

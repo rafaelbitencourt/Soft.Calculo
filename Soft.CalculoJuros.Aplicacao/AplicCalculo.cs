@@ -6,9 +6,9 @@ namespace Soft.CalculoJuros.Aplicacao
     public class AplicCalculo : IAplicCalculo
     {
         private readonly ICalculoService _calculoService;
-        private readonly ITaxasHelper _taxasHelper;
+        private readonly ITaxasService _taxasHelper;
 
-        public AplicCalculo(ICalculoService calculoService, ITaxasHelper taxasHelper)
+        public AplicCalculo(ICalculoService calculoService, ITaxasService taxasHelper)
         {
             _calculoService = calculoService;
             _taxasHelper = taxasHelper;
