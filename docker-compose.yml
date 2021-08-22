@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  softcalculojuros:
+    build: .
+    image: soft-calculojuros
+    ports:
+      - "8081:80"
+
+  softtaxas:
+    image: soft-taxas
