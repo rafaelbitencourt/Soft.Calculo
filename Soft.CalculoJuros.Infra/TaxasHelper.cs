@@ -13,7 +13,10 @@ namespace Soft.CalculoJuros.Infra
         {
             _configuration = configuration;
             _client = new HttpClient();
-            _client.BaseAddress = new Uri(RecuperarUrlApiTaxas());
+            //_client.BaseAddress = new Uri(RecuperarUrlApiTaxas());
+
+            _client.BaseAddress = new Uri("http://softtaxas/");
+            
         }
 
         public decimal RecuperarTaxaDeJuros()
@@ -28,21 +31,21 @@ namespace Soft.CalculoJuros.Infra
             return Convert.ToDecimal(valor.Replace('.', ','));
         }
 
-        private string RecuperarUrlApiTaxas()
-        {
-            var urlApi = Environment.GetEnvironmentVariable("UrlApiTaxas");
-            if (!string.IsNullOrEmpty(urlApi))
-                return urlApi;
+        //private string RecuperarUrlApiTaxas()
+        //{
+        //    var urlApi = Environment.GetEnvironmentVariable("UrlApiTaxas");
+        //    if (!string.IsNullOrEmpty(urlApi))
+        //        return urlApi;
 
-            urlApi = Environment.GetEnvironmentVariable("UrlApiTaxas", EnvironmentVariableTarget.Machine);
-            if (!string.IsNullOrEmpty(urlApi))
-                return urlApi;
+        //    urlApi = Environment.GetEnvironmentVariable("UrlApiTaxas", EnvironmentVariableTarget.Machine);
+        //    if (!string.IsNullOrEmpty(urlApi))
+        //        return urlApi;
 
-            urlApi = _configuration.GetSection("UrlApiTaxas").Value;
-            if (!string.IsNullOrEmpty(urlApi))
-                return urlApi;
+        //    urlApi = _configuration.GetSection("UrlApiTaxas").Value;
+        //    if (!string.IsNullOrEmpty(urlApi))
+        //        return urlApi;
 
-            throw new Exception("URL de acesso a API TAXAS não encontrada nas variáveis de ambiente com chave 'UrlApiTaxas'.");
-        }
+        //    throw new Exception("URL de acesso a API TAXAS não encontrada nas variáveis de ambiente com chave 'UrlApiTaxas'.");
+        //}
     }
 }
