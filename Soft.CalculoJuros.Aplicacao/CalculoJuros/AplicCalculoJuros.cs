@@ -1,5 +1,6 @@
 ﻿using Soft.CalculoJuros.Aplicacao.CalculoJuros.Dtos;
 using Soft.CalculoJuros.Infra.Taxas;
+using System.Threading.Tasks;
 
 namespace Soft.CalculoJuros.Aplicacao.CalculoJuros
 {
@@ -12,9 +13,9 @@ namespace Soft.CalculoJuros.Aplicacao.CalculoJuros
             _taxasHelper = taxasHelper;
         }
 
-        public decimal CalcularJuros(CalcularJurosDto dto)
+        public async Task<decimal> CalcularJuros(CalcularJurosDto dto)
         {
-            var taxaDeJuros = _taxasHelper.RecuperarTaxaDeJuros();
+            var taxaDeJuros = await _taxasHelper.RecuperarTaxaDeJuros();
 
             var calculoJuros = new Dominio.CalculoJuros(dto.ValorInicial, dto.Meses, taxaDeJuros);
 

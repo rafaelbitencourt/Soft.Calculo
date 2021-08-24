@@ -1,7 +1,9 @@
-﻿namespace Soft.CalculoJuros.Infra.Taxas
+﻿using System.Threading.Tasks;
+
+namespace Soft.CalculoJuros.Infra.Taxas
 {
     public interface ITaxasService
     {
-        decimal RecuperarTaxaDeJuros();
+        Task<decimal> RecuperarTaxaDeJuros();
     }
 }

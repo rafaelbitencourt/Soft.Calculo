@@ -1,6 +1,7 @@
 ﻿using Soft.CalculoJuros.Aplicacao.CalculoJuros;
 using Microsoft.AspNetCore.Mvc;
 using Soft.CalculoJuros.Aplicacao.CalculoJuros.Dtos;
+using System.Threading.Tasks;
 
 namespace Soft.CalculoJuros.API.Controllers
 {
@@ -16,7 +17,7 @@ namespace Soft.CalculoJuros.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult CalcularJuros([FromQuery] CalcularJurosDto dto) =>
-            Ok(_aplicCalculo.CalcularJuros(dto));
+        public async Task<IActionResult> CalcularJuros([FromQuery] CalcularJurosDto dto) =>
+            Ok(await _aplicCalculo.CalcularJuros(dto));
     }
 }

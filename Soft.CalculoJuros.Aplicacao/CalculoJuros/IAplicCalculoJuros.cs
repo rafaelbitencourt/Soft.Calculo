@@ -1,9 +1,10 @@
 ﻿using Soft.CalculoJuros.Aplicacao.CalculoJuros.Dtos;
+using System.Threading.Tasks;
 
 namespace Soft.CalculoJuros.Aplicacao.CalculoJuros
 {
     public interface IAplicCalculoJuros
     {
-        decimal CalcularJuros(CalcularJurosDto dto);
+        Task<decimal> CalcularJuros(CalcularJurosDto dto);
     }
 }

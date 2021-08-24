@@ -1,5 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Soft.CalculoJuros.Infra.Taxas
 {
@@ -12,13 +13,13 @@ namespace Soft.CalculoJuros.Infra.Taxas
             _httpClient = httpClient;            
         }
 
-        public decimal RecuperarTaxaDeJuros()
+        public async Task<decimal> RecuperarTaxaDeJuros()
         {
-            var responseString = _httpClient.GetStringAsync("taxajuros").Result;
+            var response = await _httpClient.GetAsync("taxajuros");
 
-            var taxaJuros = JsonConvert.DeserializeObject<decimal>(responseString);
+            response.EnsureSuccessStatusCode();
 
-            return taxaJuros;
+            return await JsonSerializer.DeserializeAsync<decimal>(await response.Content.ReadAsStreamAsync());
         }
     }
 }
