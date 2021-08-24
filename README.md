@@ -9,7 +9,7 @@
 Faz o cálculo de juros compostos e retorna o valor final, conforme fórmula abaixo: 
 Valor Final = Valor Inicial * (1 + juros) ^ Tempo
 
---Valor inicial é um decimal recebido como parâmetro;
+<b>Valor inicial</b> é um decimal recebido como parâmetro;
 --Valor do Juros é consultado na [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas);
 --Tempo representa meses, também recebido como parâmetro;
 --^ representa a operação de potência
