@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Soft.CalculoJuros.Aplicacao.CalculoJuros;
-using Soft.CalculoJuros.Infra;
+using Soft.CalculoJuros.Infra.Taxas;
 using System;
 
 namespace Soft.CalculoJuros.API

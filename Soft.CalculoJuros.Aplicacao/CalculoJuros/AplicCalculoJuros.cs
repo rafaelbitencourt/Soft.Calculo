@@ -1,5 +1,5 @@
 ﻿using Soft.CalculoJuros.Aplicacao.CalculoJuros.Dtos;
-using Soft.CalculoJuros.Infra;
+using Soft.CalculoJuros.Infra.Taxas;
 
 namespace Soft.CalculoJuros.Aplicacao.CalculoJuros
 {

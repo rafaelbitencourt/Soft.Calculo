@@ -1,4 +1,4 @@
-﻿namespace Soft.CalculoJuros.Infra
+﻿namespace Soft.CalculoJuros.Infra.Taxas
 {
     public interface ITaxasService
     {

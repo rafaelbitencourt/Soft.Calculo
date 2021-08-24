@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Net.Http;
 
-namespace Soft.CalculoJuros.Infra
+namespace Soft.CalculoJuros.Infra.Taxas
 {
     public class TaxasService : ITaxasService
     {
