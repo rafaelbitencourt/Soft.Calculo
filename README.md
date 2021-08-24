@@ -22,7 +22,7 @@ $ cd Soft.CalculoJuros
 # Construa a aplicação usando Docker Compose
 $ docker compose up
 
-# A API inciará na porta:8081 - acesse <http://localhost:8081>
+# A API iniciará na porta:8081 - acesse <http://localhost:8081>
 
 ```
 
