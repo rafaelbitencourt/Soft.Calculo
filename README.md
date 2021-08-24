@@ -1,6 +1,6 @@
 # API Soft.CalculoJuros
 
-#### API desenvolvida com .NET Core 3.1, com objetivo de realizar um cálculo de juros compostos
+#### API desenvolvida com .NET Core 3.1, com objetivo de realizar o cálculo de juros compostos
 
 Integração com a [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas) para recuperar a taxa de juros.
 
