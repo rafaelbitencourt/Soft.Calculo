@@ -45,7 +45,7 @@ $ git clone https://github.com/rafaelbitencourt/Soft.CalculoJuros
 $ cd Soft.CalculoJuros
 
 # Construa a aplicação usando Docker Compose
-$ docker compose up
+$ docker-compose up
 
 # A API iniciará na porta:8081 - acesse <http://localhost:8081>
 
