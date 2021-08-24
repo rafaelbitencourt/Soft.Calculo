@@ -1,5 +1,6 @@
-﻿using Soft.CalculoJuros.Aplicacao;
+﻿using Soft.CalculoJuros.Aplicacao.CalculoJuros;
 using Microsoft.AspNetCore.Mvc;
+using Soft.CalculoJuros.Aplicacao.CalculoJuros.Dtos;
 
 namespace Soft.CalculoJuros.API.Controllers
 {
@@ -7,15 +8,15 @@ namespace Soft.CalculoJuros.API.Controllers
     [Route("calculajuros")]
     public class CalculoJurosController : ControllerBase
     {
-        private readonly IAplicCalculo _aplicCalculo;
+        private readonly IAplicCalculoJuros _aplicCalculo;
 
-        public CalculoJurosController(IAplicCalculo aplicCalculo)
+        public CalculoJurosController(IAplicCalculoJuros aplicCalculo)
         {
             _aplicCalculo = aplicCalculo;
         }
 
         [HttpGet]
-        public IActionResult CalcularJuros([FromQuery] decimal valorinicial, [FromQuery] int meses) =>
-            Ok(_aplicCalculo.CalcularJuros(valorinicial, meses));
+        public IActionResult CalcularJuros([FromQuery] CalcularJurosDto dto) =>
+            Ok(_aplicCalculo.CalcularJuros(dto));
     }
 }
