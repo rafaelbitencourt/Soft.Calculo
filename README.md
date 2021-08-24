@@ -9,6 +9,7 @@ Integração com a [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Tax
 Instalações necessárias para rodar a aplicação localmente:
   - [Git](https://git-scm.com)
   - [Docker Desktop](https://www.docker.com/products/docker-desktop)
+  - Rodar a [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas) conforme instruções no repositório, para criar a imagem docker
 
 ### 🚀 Rodando a API
 
