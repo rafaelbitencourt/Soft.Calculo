@@ -10,10 +10,10 @@ Faz o cálculo de juros compostos e retorna o valor final, conforme fórmula aba
 Valor Final = Valor Inicial * (1 + juros) ^ Tempo
 
 <b>Valor inicial</b> é um decimal recebido como parâmetro;
---Valor do Juros é consultado na [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas);
---Tempo representa meses, também recebido como parâmetro;
---^ representa a operação de potência
---O resultado final é truncado em duas casas decimais.
+<b>Valor do Juros</b> é consultado na [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas);
+<b>Tempo</b> representa meses, também recebido como parâmetro;
+<b>^</b> representa a operação de potência
+O <b>valor final</b> é truncado em duas casas decimais.
 
 - /showmethecode
 Retorna a URL do repositório da API no GitHub.
