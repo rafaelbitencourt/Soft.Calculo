@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Soft.CalculoJuros.Aplicacao\Soft.CalculoJuros.Aplicacao.csproj" />
-    <ProjectReference Include="..\Soft.CalculoJuros.Dominio\Soft.CalculoJuros.Dominio.csproj" />
     <ProjectReference Include="..\Soft.CalculoJuros.Infra\Soft.CalculoJuros.Infra.csproj" />
   </ItemGroup>
 
