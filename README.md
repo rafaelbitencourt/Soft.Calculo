@@ -6,13 +6,13 @@
 
 - /calculajuros
 
-Faz o cálculo de juros compostos e retorna o valor final, conforme fórmula abaixo: 
+Faz o cálculo de juros compostos e retorna o valor final, conforme fórmula abaixo: <br />
 Valor Final = Valor Inicial * (1 + juros) ^ Tempo
 
-<b>Valor inicial</b> é um decimal recebido como parâmetro;
-<b>Valor do Juros</b> é consultado na [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas);
-<b>Tempo</b> representa meses, também recebido como parâmetro;
-<b>^</b> representa a operação de potência
+<b>Valor inicial</b> é um decimal recebido como parâmetro;<br />
+<b>Valor do Juros</b> é consultado na [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas);<br />
+<b>Tempo</b> representa meses, também recebido como parâmetro;<br />
+<b>^</b> representa a operação de potência<br />
 O <b>valor final</b> é truncado em duas casas decimais.
 
 - /showmethecode
