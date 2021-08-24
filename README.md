@@ -2,7 +2,31 @@
 
 #### API desenvolvida com .NET Core 3.1, com objetivo de realizar o cálculo de juros compostos
 
-Integração com a [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas) para recuperar a taxa de juros.
+### Tabela de conteúdos
+<!--ts-->
+   * [Endpoints](#Endpoints)
+   * [Pré-requisitos](#pré-requisitos)
+   * [Rodando a API](#-rodando-a-api)
+   * [Tecnologias](#-tecnologias)
+   * [Autor](#autor)
+<!--te-->
+
+### Endpoints
+
+- /calculajuros
+
+Faz o cálculo de juros compostos e retorna o valor final, conforme fórmula abaixo: <br />
+```bash
+Valor Final = Valor Inicial * (1 + taxa de juros) ^ Tempo
+```
+<b>Valor inicial</b> é um decimal recebido como parâmetro;<br />
+<b>Taxa de Juros</b> é consultado na [API Soft.Taxas](https://github.com/rafaelbitencourt/Soft.Taxas);<br />
+<b>Tempo</b> representa meses, também recebido como parâmetro;<br />
+<b>^</b> representa a operação de potência<br />
+O <b>valor final</b> é truncado em duas casas decimais.
+
+- /showmethecode <br />
+Retorna a URL do repositório da API no GitHub.
 
 ### Pré-requisitos
 
