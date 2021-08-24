@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Soft.CalculoJuros.Aplicacao;
-using Soft.CalculoJuros.Dominio;
 using Soft.CalculoJuros.Infra;
 using System;
 
@@ -21,7 +20,6 @@ namespace Soft.CalculoJuros.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ICalculoService, CalculoService>();
             services.AddScoped<IAplicCalculo, AplicCalculo>();
             services.AddHttpClient<ITaxasService, TaxasService>(client =>
             {

@@ -1,21 +1,20 @@
-using Soft.CalculoJuros.Dominio;
 using Xunit;
 
 namespace Soft.CalculoJuros.Tests
 {
-    public class CalculoServiceTest
+    public class CalculoJurosTest
     {
         [Fact]
-        public void CalcularJuros_RetornaIgual()
+        public void Calcular_RetornaValorFinalIgual()
         {
-            var mockCalculoService = new CalculoService();
             var valorInicial = 100m;
             var meses = 5;
             var juros = 0.01m;
+            var mockCalculoJuros = new Dominio.CalculoJuros(valorInicial, meses, juros);
 
-            var resultado = mockCalculoService.CalcularJuros(valorInicial, juros, meses);
+            mockCalculoJuros.Calcular();
 
-            Assert.Equal(105.10m, resultado);
+            Assert.Equal(105.10m, mockCalculoJuros.ValorFinal);
         }
     }
 }
