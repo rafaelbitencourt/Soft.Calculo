@@ -3,9 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Soft.CalculoJuros.Aplicacao.CalculoJuros;
-using Soft.CalculoJuros.Infra.Taxas;
-using System;
+using Soft.CalculoJuros.API.Extensoes;
 
 namespace Soft.CalculoJuros.API
 {
@@ -20,11 +18,7 @@ namespace Soft.CalculoJuros.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IAplicCalculoJuros, AplicCalculoJuros>();
-            services.AddHttpClient<ITaxasService, TaxasService>(client =>
-            {
-                client.BaseAddress = new Uri(Configuration["UrlApiTaxas"]);
-            });
+            services.AddApplicationServices();
 
             services.AddControllers();
 
