@@ -1,6 +1,8 @@
 ﻿using System.Text.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using System;
 
 namespace Soft.CalculoJuros.Infra.Taxas
 {
@@ -8,9 +10,10 @@ namespace Soft.CalculoJuros.Infra.Taxas
     {
         private readonly HttpClient _httpClient;
 
-        public TaxasService(HttpClient httpClient)
+        public TaxasService(HttpClient httpClient, IConfiguration configuration)
         {
-            _httpClient = httpClient;            
+            _httpClient = httpClient;
+            _httpClient.BaseAddress = new Uri(configuration["UrlApiTaxas"]);
         }
 
         public async Task<decimal> RecuperarTaxaDeJuros()
